@@ -1,0 +1,66 @@
+object MainForm: TMainForm
+  Left = 2604
+  Height = 180
+  Top = 693
+  Width = 320
+  AllowDropFiles = True
+  BorderStyle = bsDialog
+  Caption = 'CRC32 Calculator'
+  ClientHeight = 180
+  ClientWidth = 320
+  OnDropFiles = FormDropFiles
+  LCLVersion = '2.0.3.0'
+  object btnExit: TButton
+    Left = 232
+    Height = 22
+    Top = 136
+    Width = 75
+    Caption = 'Exit'
+    OnClick = btnExitClick
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 16
+    Top = 24
+    Width = 318
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Drop file on this form to calculate CRC32'
+    ParentColor = False
+  end
+  object btnCopyToClipboard: TButton
+    Left = 80
+    Height = 22
+    Top = 136
+    Width = 147
+    Caption = 'Copy to Clipboard'
+    OnClick = btnCopyToClipboardClick
+    TabOrder = 1
+  end
+  object lblValue: TLabel
+    Left = 0
+    Height = 43
+    Top = 72
+    Width = 318
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'CRC32 Value'
+    Font.Color = clRed
+    Font.Height = -36
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblFilename: TLabel
+    Left = 2
+    Height = 16
+    Top = 52
+    Width = 318
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Filename'
+    Font.Color = clRed
+    ParentColor = False
+    ParentFont = False
+  end
+end
